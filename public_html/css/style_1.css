@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+nav a {
+    background: goldenrod;
+    color: ivory;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.5s, color 0.5s;
+    width: 100%;
+}
+nav *::selection {
+    background: transparent;
+    color: inherit;
+}
+nav a:hover {
+    background: ivory;
+    color: goldenrod;
+}
+section {
+    height: 100%;
+    left: 0;
+    padding: calc(1rem + 20px) 20px 20px;
+    position: fixed;
+    top: 0;
+    transition: transform 0s 0.8s ease-in-out;
+    transform: scale(0, 0) translateY(100%);
+    width: 100%;
+    z-index: 8;
+}
+
+section:target {
+    transform: scale(1, 1) translateY(0%);
+    transition: transform 0.8s 0s ease-in-out;
+    z-index: 9;
+}
+#one { background: red;}
+
+#two { background: orange;}
+
+#three {background: yellow;}
+
+#four {
+    background: green;
+}
+
+#five {
+    background: blue;
+}
+
+#six {
+    background: purple;
+}
+
+#seven {
+    background: #000;
+    color: #fff;
+}
+
+#eight {
+    background: #555;
+}
+
+#nine {
+    background: #aaa;
+}
+
+#ten { background: goldenrod;}
