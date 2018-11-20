@@ -4,8 +4,95 @@
 
 html,
 body {
+    font-family: arial;
   margin: 0;
   padding: 0;
   height: 100%;
   /* overflow: hidden; */
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 2em;
+}
+.wrapper {
+    position: relative;
+}
+
+nav {
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+nav a:hover {
+    background: rgba(100%,100%,100%, 0.5);
+    color: #000;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+
+#one {
+    background: red;
+}
+
+#two {
+    background: orange;
+}
+
+#three {
+    background: yellow;
+}
+
+#four {
+    background: yellowgreen;
+}
+
+#five {
+    background: green;
+}
+
+#six {
+    background: blue;
+}
+
+#seven {
+    background: blueviolet;
+}
+
+#eight {
+    background: purple;
+}
+
+#nine {
+    background: violet;
+}
+
+#ten {
+    background: crimson;
 }
